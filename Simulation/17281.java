@@ -1,4 +1,4 @@
-package Main;
+package Main.Simulation;
 
 import java.util.Arrays;
 import java.util.Scanner;
