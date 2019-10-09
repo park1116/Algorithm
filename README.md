@@ -1,3 +1,3 @@
 # Algorithm
 
-백준 
+백준
