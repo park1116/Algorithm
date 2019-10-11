@@ -15,7 +15,7 @@ public class Main {
 		System.out.println(answer);
 	}
 
-	// queenÀ» ³õ´Â À§Ä¡ ÇÔ¼ö
+	// queenì„ ë†“ëŠ” ìœ„ì¹˜ í•¨ìˆ˜
 	public static void queen(int row) {
 		for (int j = 0; j < N; j++) {
 			if (check(row, j)) {
@@ -31,14 +31,14 @@ public class Main {
 
 	}
 
-	// queenÀ» ³õÀ» ¼ö ÀÖ´ÂÁö È®ÀÎÇÏ´Â ÇÔ¼ö
+	// queenì„ ë†“ì„ ìˆ˜ ìˆëŠ”ì§€ í™•ì¸í•˜ëŠ” í•¨ìˆ˜
 	public static boolean check(int row, int col) {
 		if (checkH(row, col) && checkL(row, col) && checkR(row, col))
 			return true;
 		return false;
 	}
 
-	// ¼¼·Î È®ÀÎ
+	// ì„¸ë¡œ í™•ì¸
 	public static boolean checkH(int row, int col) {
 		int i = row;
 		while (i > 0) {
@@ -49,7 +49,7 @@ public class Main {
 		return true;
 	}
 
-	// ÁÂÃø ´ë°¢¼± È®ÀÎ
+	// ì¢Œì¸¡ ëŒ€ê°ì„  í™•ì¸
 	public static boolean checkL(int row, int col) {
 		int i = row;
 		int j = col;
@@ -62,7 +62,7 @@ public class Main {
 		return true;
 	}
 
-	// ¿ìÃø ´ë°¢¼± È®ÀÎ
+	// ìš°ì¸¡ ëŒ€ê°ì„  í™•ì¸
 	public static boolean checkR(int row, int col) {
 		int i = row;
 		int j = col;
