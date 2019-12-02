@@ -29,7 +29,7 @@ public class Main {
 	}
 
 	// 총 단지 수를 구하는 함수
-	public static Vector countAll() {
+	public static Vector<Integer> countAll() {
 		Vector<Integer> vector = new Vector<Integer>();
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
