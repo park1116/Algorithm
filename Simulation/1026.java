@@ -21,7 +21,7 @@ public class Main {
 		System.out.println(S);
 	}
 
-	// ÀÛÀº °ªºÎÅÍ Å« °ªÀ¸·Î Á¤·ÄÇÏ±â
+	// ì‘ì€ ê°’ë¶€í„° í° ê°’ìœ¼ë¡œ ì •ë ¬í›„ ê³„ì‚°í•˜ê¸°
 	public static int sortAsc(int size) {
 		int[] arr = new int[size];
 		int result = 0;
