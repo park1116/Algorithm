@@ -35,7 +35,7 @@ public class Main {
 		System.out.println(max);
 	}
 
-	// ¸Ê¿¡¼­ Ã³À½ºÎÅÍ ³¡±îÁö Ãâ¹ßÇÏ´Â ÁöÁ¡ Á¤ÇÏ´Â ÇÔ¼ö
+	// ë§µì—ì„œ ì²˜ìŒë¶€í„° ëê¹Œì§€ ì¶œë°œí•˜ëŠ” ì§€ì  ì •í•˜ëŠ” í•¨ìˆ˜
 	public static void settingStart() {
 		for (int i = 0; i < H; i++) {
 			for (int j = 0; j < W; j++) {
@@ -46,7 +46,7 @@ public class Main {
 		}
 	}
 
-	// Ãâ¹ßÁ¡¿¡¼­ °¡Àå ¸Ö¸®ÀÖ´Â ÁöÁ¡±îÁö °É¸®´Â ½Ã°£
+	// ì¶œë°œì ì—ì„œ ê°€ì¥ ë©€ë¦¬ìˆëŠ” ì§€ì ê¹Œì§€ ê±¸ë¦¬ëŠ” ì‹œê°„
 	public static void bfs(int sx, int sy) {
 		int result = 0;
 		int[][] time = new int[H][W];
