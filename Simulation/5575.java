@@ -23,7 +23,7 @@ public class Main {
 		}
 	}
 
-	// ±Ù¹«½Ã°£À» °è»êÇÏ´Â ÇÔ¼ö
+	// ê·¼ë¬´ì‹œê°„ì„ ê³„ì‚°í•˜ëŠ” í•¨ìˆ˜
 	public static int[] cal(int sh, int sm, int ss, int fh, int fm, int fs) {
 		int h, m, s = 0;
 		if (fs >= ss)
