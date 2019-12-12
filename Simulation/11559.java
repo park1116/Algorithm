@@ -31,7 +31,7 @@ public class Main {
 		System.out.println(result);
 	}
 
-	// ºí·ÏÀ» Á¶È¸ÇÏ´Â ÇÔ¼ö
+	// ë¸”ë¡ì„ ì¡°íšŒí•˜ëŠ” í•¨ìˆ˜
 	public static void search() {
 		for (int i = 11; i >= 0; i--) {
 			for (int j = 0; j < 6; j++) {
@@ -47,7 +47,7 @@ public class Main {
 			return;
 	}
 
-	// 4°³ÀÇ °°Àº »ö ºí·ÏÀÌ ÀÖ´Ù¸é ÅÍÁö´Â ÇÔ¼ö
+	// 4ê°œì˜ ê°™ì€ ìƒ‰ ë¸”ë¡ì´ ìžˆë‹¤ë©´ í„°ì§€ëŠ” í•¨ìˆ˜
 	public static void pop(int sx, int sy) {
 		boolean[][] visited = new boolean[12][6];
 		Queue<Point> q = new LinkedList<Point>();
@@ -79,7 +79,7 @@ public class Main {
 		}
 	}
 
-	// ÅÍÁö°í³ª¼­ ºí·ÏÀÌ ¾Æ·¡·Î ¶³¾îÁö´Â ÇÔ¼ö
+	// í„°ì§€ê³ ë‚˜ì„œ ë¸”ë¡ì´ ì•„ëž˜ë¡œ ë–¨ì–´ì§€ëŠ” í•¨ìˆ˜
 	public static void drop() {
 		for (int i = 11; i >= 0; i--) {
 			for (int j = 0; j < 6; j++) {
