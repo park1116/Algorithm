@@ -2,14 +2,14 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-	static int N, max, min;
+	static int N;
+	static int max = Integer.MIN_VALUE;
+	static int min = Integer.MAX_VALUE;
 	static int[] arr;
 	static int[] op;
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
-		max = -1000000000;
-		min = 1000000000;
 		N = sc.nextInt();
 		arr = new int[N];
 		op = new int[4];
