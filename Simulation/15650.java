@@ -1,71 +1,42 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-
 	static int N, M;
-
 	static int[] arr;
+	static boolean[] visit;
 
-	static boolean[] visited;
-
-	public static void main(String[] args) {
-
-		Scanner input = new Scanner(System.in);
-
-		N = input.nextInt();
-
-		M = input.nextInt();
-
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		N = sc.nextInt();
+		M = sc.nextInt();
 		arr = new int[M + 1];
-
-		visited = new boolean[N + 1];
-
-		backtracking(1, 1);
-
+		visit = new boolean[N + 1];
+		backtracking(1);
 	}
 
-	// 1 ~ N 까지 숫자를 넣는 함수
-
-	static void backtracking(int start, int order) {
-
-		if (order == arr.length) {
-
-			result(arr);
-
+	public static void backtracking(int num) {
+		if (num - 1 == M) {
+			result();
 			return;
-
 		}
 
-		for (int i = start; i <= N; i++) {
-
-			if (!visited[i]) {
-
-				arr[order] = i;
-
-				visited[i] = true;
-
-				backtracking(i + 1, order + 1);
-
-				visited[i] = false;
-
+		for (int i = 1; i <= N; i++) {
+			if (!visit[i]) {
+				if (arr[num - 1] < i) {
+					arr[num] = i;
+					visit[i] = true;
+					backtracking(num + 1);
+					visit[i] = false;
+				}
 			}
-
 		}
-
 	}
 
-	// M 개의 숫자만 출력하는 함수
-
-	static void result(int[] arr) {
-
-		for (int i = 1; i < arr.length; i++) {
-
+	public static void result() {
+		for (int i = 1; i <= M; i++) {
 			System.out.print(arr[i] + " ");
-
 		}
-
 		System.out.println();
-
 	}
-
 }
