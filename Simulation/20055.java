@@ -12,7 +12,6 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	    StringTokenizer st = new StringTokenizer(br.readLine());
 	    N = Integer.parseInt(st.nextToken());
 	    K = Integer.parseInt(st.nextToken());
@@ -30,13 +29,11 @@ public class Main {
 			if(fourth() == -1) {
 				result++;
 			} else {
-				bw.write(result+"\n");
+				System.out.println(result);
 				break;
 			}
 		}
 		br.close();
-		bw.flush();
-		bw.close();
 	}
 
 	public static void first() {
